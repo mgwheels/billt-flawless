@@ -1,0 +1,12 @@
+<section id="services" class="content-section">
+  <h2>Services</h2>
+  <div class="card-grid">
+    @for (service of services; track service.title) {
+      <app-service-card
+        [title]="service.title"
+        [description]="service.description"
+        [iconPaths]="service.icon"
+      />
+    }
+  </div>
+</section>

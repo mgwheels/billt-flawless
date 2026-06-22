@@ -1,0 +1,33 @@
+#hero {
+  background: linear-gradient(135deg, #1a1a2e 0%, #16213e 50%, #0f3460 100%);
+  color: #fff;
+  text-align: center;
+
+  h1 {
+    font-size: clamp(2.5rem, 8vw, 5rem);
+    font-weight: 800;
+    letter-spacing: -0.02em;
+    margin: 0;
+  }
+
+  p {
+    font-size: clamp(1rem, 3vw, 1.5rem);
+    margin: 1rem 0 2rem;
+    opacity: 0.8;
+  }
+
+  button {
+    background: #e94560;
+    color: #fff;
+    border: none;
+    padding: 0.75rem 2rem;
+    font-size: 1rem;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background 0.2s;
+
+    &:hover {
+      background: #d63851;
+    }
+  }
+}
