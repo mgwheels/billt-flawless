@@ -1,4 +1,4 @@
-import { Component, Input } from '@angular/core';
+import { Component, input } from '@angular/core';
 
 @Component({
   selector: 'app-service-card',
@@ -6,7 +6,7 @@ import { Component, Input } from '@angular/core';
   styleUrl: './service-card.scss',
 })
 export class ServiceCard {
-  @Input({ required: true }) title!: string;
-  @Input({ required: true }) description!: string;
-  @Input({ required: true }) iconPaths!: string[];
+  readonly title = input.required<string>();
+  readonly description = input.required<string>();
+  readonly iconPaths = input.required<string[]>();
 }
